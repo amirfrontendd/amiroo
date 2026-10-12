@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امیرآکادمی | آموزش طراحی سایت</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo" data-i18n="logo">امیر<span>آکادمی</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-i18n="nHome">خانه</a></li>
+                <li><a href="#courses" data-i18n="nCourses">دوره‌ها</a></li>
+                <li><a href="#teachers" data-i18n="nTeach">اساتید</a></li>
+                <li><a href="#pricing" data-i18n="nPrice">تعرفه</a></li>
+                <li><a href="#register" class="btn btn-small" data-i18n="nReg">ثبت‌نام</a></li>
+            </ul>
+            <div class="nav-tools">
+                <button id="langBtn" class="tool-btn">EN</button>
+                <button id="themeBtn" class="tool-btn">🌙</button>
+                <button id="cartBtn" class="cart-btn">📚 <span id="cartCount">0</span></button>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero container" id="home">
+        <div class="hero-text">
+            <div class="badge" data-i18n="badge">✦ از صفر تا کسب درآمد + مدرک</div>
+            <h1 data-i18n="heroT">طراحی سایت رو پروژه‌محور یاد بگیر</h1>
+            <p data-i18n="heroS">HTML ،CSS ،جاوااسکریپت و وردپرس. با ۵ پروژه واقعی وارد بازار کار شو.</p>
+            <div class="hero-btns">
+                <a href="#courses" class="btn" data-i18n="bCourses">دیدن دوره‌ها</a>
+                <a href="#register" class="btn btn-outline" data-i18n="bFree">مشاوره رایگان</a>
+            </div>
+            <div class="hero-stats">
+                <div><strong>+۵۰۰</strong><small data-i18n="st1">دانشجو</small></div>
+                <div><strong>۴.۹★</strong><small data-i18n="st2">رضایت</small></div>
+                <div><strong>+۵</strong><small data-i18n="st3">پروژه عملی</small></div>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="big">🎓</div>
+            <h3 data-i18n="popT">پیشنهاد ویژه</h3>
+            <p data-i18n="popS">بوت‌کمپ فرانت‌اند + وردپرس با ۴۰٪ تخفیف</p>
+            <strong data-i18n="popP">۳٬۹۰۰٬۰۰۰ تومان</strong>
+            <button class="btn white" id="popBtn" data-i18n="popB">ثبت‌نام سریع</button>
+        </div>
+    </section>
+    <section class="section container" id="courses">
+        <h2 class="title" data-i18n="cT">دوره‌ها</h2>
+        <p class="subtitle" data-i18n="cS">فیلتر کن و دوره‌ات رو انتخاب کن</p>
+        <div class="filters" id="filters">
+            <button class="filter active" data-cat="all" data-i18n="fAll">همه</button>
+            <button class="filter" data-cat="front" data-i18n="fF">فرانت‌اند</button>
+            <button class="filter" data-cat="wp" data-i18n="fW">وردپرس</button>
+            <button class="filter" data-cat="seo" data-i18n="fS">سئو</button>
+        </div>
+        <div class="grid" id="courseGrid"></div>
+    </section>
+    <section class="section container" id="teachers">
+        <h2 class="title" data-i18n="tT">اساتید</h2>
+        <div class="grid-3">
+            <div class="teacher">
+                <div class="t-av a1">ع</div>
+                <h4 data-i18n="t1n">امیر عباسی</h4><small data-i18n="t1r">مدرس فرانت‌اند</small>
+            </div>
+            <div class="teacher">
+                <div class="t-av a2">س</div>
+                <h4 data-i18n="t2n">سارا محمدی</h4><small data-i18n="t2r">مدرس وردپرس</small>
+            </div>
+            <div class="teacher">
+                <div class="t-av a3">ر</div>
+                <h4 data-i18n="t3n">رضا احمدی</h4><small data-i18n="t3r">مدرس سئو</small>
+            </div>
+        </div>
+    </section>
+    <section class="section container" id="pricing">
+        <h2 class="title" data-i18n="pT">تعرفه‌ها</h2>
+        <div class="grid-3">
+            <div class="price">
+                <h3 data-i18n="p1t">تک دوره</h3>
+                <div class="amount"><span data-i18n="p1p">۱٬۹۰۰٬۰۰۰</span> <small data-i18n="toman">تومان</small></div>
+                <ul>
+                    <li data-i18n="p1l1">۸ جلسه آنلاین</li>
+                    <li data-i18n="p1l2">پروژه عملی</li>
+                    <li data-i18n="p1l3">مدرک پایان دوره</li>
+                </ul><a href="#register" class="btn btn-outline" data-i18n="order">ثبت‌نام</a>
+            </div>
+            <div class="price featured">
+                <div class="pop">★</div>
+                <h3 data-i18n="p2t">بوت‌کمپ</h3>
+                <div class="amount"><span data-i18n="p2p">۳٬۹۰۰٬۰۰۰</span> <small data-i18n="toman2">تومان</small></div>
+                <ul>
+                    <li data-i18n="p2l1">همه دوره‌ها</li>
+                    <li data-i18n="p2l2">منتور اختصاصی</li>
+                    <li data-i18n="p2l3">معرفی به کار</li>
+                </ul><a href="#register" class="btn" data-i18n="order2">ثبت‌نام</a>
+            </div>
+            <div class="price">
+                <h3 data-i18n="p3t">خصوصی</h3>
+                <div class="amount"><span data-i18n="p3p">۶٬۰۰۰٬۰۰۰</span> <small data-i18n="toman3">تومان</small></div>
+                <ul>
+                    <li data-i18n="p3l1">کلاس ۱ نفره</li>
+                    <li data-i18n="p3l2">زمان دلخواه</li>
+                    <li data-i18n="p3l3">پشتیبانی دائمی</li>
+                </ul><a href="#register" class="btn btn-outline" data-i18n="order3">ثبت‌نام</a>
+            </div>
+        </div>
+    </section>
+    <section class="section container" id="faq">
+        <h2 class="title" data-i18n="faqT">سوالات پرتکرار</h2>
+        <div class="faq">
+            <div class="faq-item"><button class="faq-q"><span data-i18n="q1">پیش‌نیاز لازم
+                        داره؟</span><span>+</span></button>
+                <div class="faq-a" data-i18n="a1">نه، از صفر شروع می‌کنیم فقط لپ‌تاپ لازمه.</div>
+            </div>
+            <div class="faq-item"><button class="faq-q"><span data-i18n="q2">کلاس‌ها
+                        آنلاینن؟</span><span>+</span></button>
+                <div class="faq-a" data-i18n="a2">بله، آنلاین + ضبط شده برای مرور.</div>
+            </div>
+            <div class="faq-item"><button class="faq-q"><span data-i18n="q3">مدرک می‌دین؟</span><span>+</span></button>
+                <div class="faq-a" data-i18n="a3">بله، بعد از تحویل پروژه نهایی مدرک می‌گیری.</div>
+            </div>
+        </div>
+    </section>
+    <section class="section container" id="register">
+        <h2 class="title" data-i18n="rT">فرم ثبت‌نام</h2>
+        <p class="subtitle" data-i18n="rS">پر کن تا مشاوره‌ات تماس بگیره</p>
+        <form class="form" id="regForm">
+            <div class="row">
+                <div class="field"><label data-i18n="lName">نام</label><input type="text" id="rName"
+                        data-i18n-ph="phName" placeholder="نام شما"><small class="error" id="eName"></small></div>
+                <div class="field"><label data-i18n="lPhone">موبایل</label><input type="text" id="rPhone"
+                        placeholder="0912..."><small class="error" id="ePhone"></small></div>
+            </div>
+            <div class="field"><label data-i18n="lCourse">دوره</label><select id="rCourse">
+                    <option data-i18n="o1">بوت‌کمپ فرانت‌اند</option>
+                    <option data-i18n="o2">وردپرس</option>
+                    <option data-i18n="o3">سئو</option>
+                </select></div>
+            <button type="submit" class="btn full" data-i18n="rB">ثبت‌نام</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p class="copy" data-i18n="foot">امیرآکادمی | ساخته امیر عباسی • 09231374838</p>
+    </footer>
+    <div class="cart-overlay" id="overlay"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-h">
+            <h3 data-i18n="cartT">دوره‌های من</h3><button id="closeCart">✕</button>
+        </div>
+        <div class="drawer-b" id="cartItems"></div>
+        <div class="drawer-f">
+            <div class="total"><span data-i18n="total">جمع:</span><strong id="cartTotal">۰</strong></div><button
+                class="btn full" id="payBtn" data-i18n="pay">نهایی کردن ثبت‌نام</button>
+        </div>
+    </aside>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
